@@ -32,5 +32,5 @@ days= st.number_input("Number of days of the trip", min_value=1, max_value= 365,
 budget= st.text_input("Budget Amount= ")
 
 if st.button("Generate"):
-    tours = tour_chain.invoke({"location": location,"person": person,"tourtpe": tourtype,"month": month,"days": days, "budget": budget})
+    tours = tour_chain.invoke({"location": location,"person": person,"tourtype": tourtype,"month": month,"days": days, "budget": budget})
     st.write(tours.content)
