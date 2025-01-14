@@ -7,7 +7,7 @@ from langchain import PromptTemplate
 import streamlit as st
 import os
 
-os.environ['GOOGLE_API_KEY'] = st.secrets['AIzaSyAGMTsHdloiDYzRl2YzTmy8ly6dDvJ4wpw']
+os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # Create prompt template for suggesting places
 tour_template = "Give me places in {location} for {person} people to go on a {tourtype} tour in {month}, for {days} days on a budget of {budget} Indian rupees"
